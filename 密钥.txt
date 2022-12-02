@@ -1,0 +1,44 @@
+BTCTestNet：
+
+Alice:
+Private key: cNQpmGZq8yG7SQUDSzyWnVaYHkLMwXW4zBHkmr5VLnMNAbTZt1N7
+Address: mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa
+
+Bob:
+Private key: cQfjabxUh8EQ9SKpipFycBRyJ6VmXLhgEzZfnrY62JdbLuaTmsg6
+Address: mzF2hiV3PJoiokXqgBeanyhLeAFDh1biXH
+
+Alice领币哈希：
+dc14f6f9d116c78fb4448451e9af6d6e34886f381be768c60078a803bbb38ae0
+
+
+
+
+BLY：
+
+Alice:
+com/v1/bcy/test/addrs?token=d1a73b36f7d644cfbe6694a948218633
+{
+  "private": "04b3f9b6deca3f631e5327fbe8c26bf02bd9a0b13e7218d15de4805102bf9bae",
+  "public": "0250eefd8c9c6f1efe54aff349a8b15d62d3a4649808ad8b01296bbe24b4f05764",
+  "address": "CCWJ9XDb1apZrfLVGuQeFceG8ckcJXNkHy",
+  "wif": "BoVAyieKxRCJjWLKygCYMaAiS9WNF3LKHC5hvXvXdFj7WFW11Dxn"
+}%   
+
+Bob:
+com/v1/bcy/test/addrs?token=d1a73b36f7d644cfbe6694a948218633
+{
+  "private": "8799f8f1dfbbeb54a841bc839b602d1f3231aaf2f25633c6b9d69d18cf586c4e",
+  "public": "035070fc2e3155931cd556e59fab62b2e24193fdc607171c693bb263464d9886b3",
+  "address": "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778",
+  "wif": "Bssd3cjLWoxDfu2gz8Nf7iRwVcBnMRzbZW2Y8GNx2kuYHZoNZHNt"
+}%      
+
+
+Bob领币哈希：
+/faucet?token=d1a73b36f7d644cfbe6694a948218633
+{
+  "tx_ref": "35bd023e4397337bfa54339615163f71b61ff13835e4eb2e6b4fabeb8ff326f5"
+}% 
+
+
