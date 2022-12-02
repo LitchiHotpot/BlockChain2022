@@ -1,0 +1,92 @@
+Alice swap tx (BTC) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "1f57b67528f9f43509cb8430fc801db877fc7133f0f75b0a87ef27cdfdc1f31c",
+    "addresses": [
+      "mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa"
+    ],
+    "total": 123963,
+    "fees": 10000,
+    "size": 302,
+    "vsize": 302,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T02:28:42.507581085Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "ca218ade9e70084acce81c92ce9b5a510affc8d38d44ac367fd53624812a581b",
+        "output_index": 0,
+        "script": "483045022100d7ca6b0c318af67260079629770d8fab182031a48b895d74e52ffa22f437d81f022051144314add3a5fd7757d54c24871c51254c8a76f35e3252242f9972aad97a4f01210308dbfed4c2fea423f82ab8fe4a47778c3cb7a6e242f4f11923152de30361a94c",
+        "output_value": 133963,
+        "sequence": 4294967295,
+        "addresses": [
+          "mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 2409278
+      }
+    ],
+    "outputs": [
+      {
+        "value": 123963,
+        "script": "74528763a914853b775079232503df966e626618e1d388a957208821034ceae48aa9d4260d9d38b7d9fb7f5d933177322d7efab84ec07712123384bbcaac6752210308dbfed4c2fea423f82ab8fe4a47778c3cb7a6e242f4f11923152de30361a94c21034ceae48aa9d4260d9d38b7d9fb7f5d933177322d7efab84ec07712123384bbca52ae68",
+        "addresses": null,
+        "script_type": "unknown"
+      }
+    ]
+  }
+}
+Bob swap tx (BCY) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "b71675530a4d04550d584dfdd8767b261e13f4e30a4613b2b97e414bf9f17e81",
+    "addresses": [
+      "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778"
+    ],
+    "total": 70000,
+    "fees": 10000,
+    "size": 302,
+    "vsize": 302,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T02:28:43.873833148Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "3251adfb09990a1e4194ed14185c8d165d883ea5633904b8b41672d0e53c1d7c",
+        "output_index": 0,
+        "script": "483045022100bba6e22f9f1d15b554f38a7cc1e5be6ccdc7c254242200e0546c58f69399992f02203fab4c88270c727ad278ced3b5edba9d298d6a949d0124e4cee38562268b48c50121035070fc2e3155931cd556e59fab62b2e24193fdc607171c693bb263464d9886b3",
+        "output_value": 80000,
+        "sequence": 4294967295,
+        "addresses": [
+          "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 569488
+      }
+    ],
+    "outputs": [
+      {
+        "value": 70000,
+        "script": "74528763a914853b775079232503df966e626618e1d388a9572088210250eefd8c9c6f1efe54aff349a8b15d62d3a4649808ad8b01296bbe24b4f05764ac675221035070fc2e3155931cd556e59fab62b2e24193fdc607171c693bb263464d9886b3210250eefd8c9c6f1efe54aff349a8b15d62d3a4649808ad8b01296bbe24b4f0576452ae68",
+        "addresses": null,
+        "script_type": "unknown"
+      }
+    ]
+  }
+}

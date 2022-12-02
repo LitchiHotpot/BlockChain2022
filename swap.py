@@ -90,7 +90,7 @@ bob_locktime = 3
 
 tx_fee = 0.0001
 
-broadcast_transactions = False
+broadcast_transactions = True
 alice_redeems = True
 
 #
