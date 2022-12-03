@@ -1,0 +1,190 @@
+/Users/sokoface/Documents/大三上/区块链/Exercise4/venv/bin/python /Users/sokoface/Documents/大三上/区块链/Exercise4/swap.py 
+Alice swap tx (BTC) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "16e2f4637f72a8c7e6c5defe302b97bb3787179f4f61000986f92a9817613287",
+    "addresses": [
+      "mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa"
+    ],
+    "total": 123963,
+    "fees": 10000,
+    "size": 302,
+    "vsize": 302,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T09:13:42.457207257Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "ca218ade9e70084acce81c92ce9b5a510affc8d38d44ac367fd53624812a581b",
+        "output_index": 6,
+        "script": "483045022100db2997ec8158a40bda776ad020ed77f64cffbbdd805b77672eda2a621520197902207bf3aeb09fc67ef7eb63b83dfac5f81a3c3bea1cccb4ae7ac61561eee368e5ca01210308dbfed4c2fea423f82ab8fe4a47778c3cb7a6e242f4f11923152de30361a94c",
+        "output_value": 133963,
+        "sequence": 4294967295,
+        "addresses": [
+          "mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 2409278
+      }
+    ],
+    "outputs": [
+      {
+        "value": 123963,
+        "script": "74528763a914853b775079232503df966e626618e1d388a957208821034ceae48aa9d4260d9d38b7d9fb7f5d933177322d7efab84ec07712123384bbcaac6752210308dbfed4c2fea423f82ab8fe4a47778c3cb7a6e242f4f11923152de30361a94c21034ceae48aa9d4260d9d38b7d9fb7f5d933177322d7efab84ec07712123384bbca52ae68",
+        "addresses": null,
+        "script_type": "unknown"
+      }
+    ]
+  }
+}
+Bob swap tx (BCY) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "56f0bb3579fedfd429406820c186462b86c7ec674713d5f13136228845023936",
+    "addresses": [
+      "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778"
+    ],
+    "total": 70000,
+    "fees": 10000,
+    "size": 301,
+    "vsize": 301,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T09:13:43.066948714Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "3251adfb09990a1e4194ed14185c8d165d883ea5633904b8b41672d0e53c1d7c",
+        "output_index": 6,
+        "script": "473044022047ecbec0cb9af6baffcea9b29f57bf5192ef304254de0e382b7bfee44e6a655a02201e8a0b60726070d7774c650a760f86a3e7e54570933b770afa9972dbe809325d0121035070fc2e3155931cd556e59fab62b2e24193fdc607171c693bb263464d9886b3",
+        "output_value": 80000,
+        "sequence": 4294967295,
+        "addresses": [
+          "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 569488
+      }
+    ],
+    "outputs": [
+      {
+        "value": 70000,
+        "script": "74528763a914853b775079232503df966e626618e1d388a9572088210250eefd8c9c6f1efe54aff349a8b15d62d3a4649808ad8b01296bbe24b4f05764ac675221035070fc2e3155931cd556e59fab62b2e24193fdc607171c693bb263464d9886b3210250eefd8c9c6f1efe54aff349a8b15d62d3a4649808ad8b01296bbe24b4f0576452ae68",
+        "addresses": null,
+        "script_type": "unknown"
+      }
+    ]
+  }
+}
+Sleeping for 20 minutes to let transactions confirm...
+Bob return coins (BCY) tx created successfully!
+Alice return coins tx (BTC) created successfully!
+Sleeping for bob_locktime blocks to pass locktime...
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "3c6b874d90c0de2d15e10125255aeddf0b60cf0febb2d1d15f1d31ace5e8b7b3",
+    "addresses": [
+      "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778"
+    ],
+    "total": 60000,
+    "fees": 10000,
+    "size": 231,
+    "vsize": 231,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T09:43:44.450975269Z",
+    "ver": 1,
+    "lock_time": 570619,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "56f0bb3579fedfd429406820c186462b86c7ec674713d5f13136228845023936",
+        "output_index": 0,
+        "script": "00483045022100dc99b7ff6ef1e2733f2ca42ffdd38aab8a975dd0b6cc21bfb35e8c25bf18fc7b02206a4de3db2002c1dfaeb17f2bbfcab41e252e14e45df5540ed153f5e67b55434e01473044022065eba4aa54a7d925b94d35636657b27b37c3d12531c6cce3f4ab98c1b5bc305d0220323b1f48a04cea48c36bc91e3239d47c4594ebe1242f84a1a9ac927699839a4001",
+        "output_value": 70000,
+        "sequence": 4294967295,
+        "script_type": "unknown",
+        "age": 570619
+      }
+    ],
+    "outputs": [
+      {
+        "value": 60000,
+        "script": "76a91453825ada2cf9540128f307edf6aacaa2b52e04e188ac",
+        "addresses": [
+          "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  }
+}
+Sleeping for alice_locktime blocks to pass locktime...
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "5d58cc049ea4a2a5dd0e2b53b8b0411c77159de48ea1e13a522238e357c1f6ac",
+    "addresses": [
+      "mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa"
+    ],
+    "total": 113963,
+    "fees": 10000,
+    "size": 232,
+    "vsize": 232,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T09:53:46.631278459Z",
+    "ver": 1,
+    "lock_time": 2409418,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "16e2f4637f72a8c7e6c5defe302b97bb3787179f4f61000986f92a9817613287",
+        "output_index": 0,
+        "script": "00483045022100ccb5a51f59214f9d402a35a03c82086fd97877fa7c8c8f37f009a6fa8457b0ba02204726d3baf724812fdb054fae8e9b31ef46d42f15313247ece9aa0cae688b450801483045022100be1d6ec4f75a428f2028bcc3dec05a757c2ec269a81a33a05fbd9704481f0fe902200c3407dfb09ddf76900314ed4a487b2b69a01ea2da54cf16659d9ff8b7a97a0301",
+        "output_value": 123963,
+        "sequence": 4294967295,
+        "script_type": "unknown",
+        "age": 2409417
+      }
+    ],
+    "outputs": [
+      {
+        "value": 113963,
+        "script": "76a91490039ed9d59145cb0c788344cbe4306a279a6c2e88ac",
+        "addresses": [
+          "mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  }
+}
+
+进程已结束,退出代码0

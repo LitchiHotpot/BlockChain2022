@@ -69,29 +69,29 @@ import bob
 #
 
 alice_txid_to_spend     = "ca218ade9e70084acce81c92ce9b5a510affc8d38d44ac367fd53624812a581b"
-alice_utxo_index        = 0
+alice_utxo_index        = 6
 alice_amount_to_send    = 0.00133963
 
 bob_txid_to_spend       = "3251adfb09990a1e4194ed14185c8d165d883ea5633904b8b41672d0e53c1d7c"
-bob_utxo_index          = 0
+bob_utxo_index          = 6
 bob_amount_to_send      = 0.0008
 
 # Get current block height (for locktime) in 'height' parameter for each blockchain (and put it into swap.py):
 #  curl https://api.blockcypher.com/v1/btc/test3
-btc_test3_chain_height  = 2409282
+btc_test3_chain_height  = 2409416
 
 #  curl https://api.blockcypher.com/v1/bcy/test
-bcy_test_chain_height   = 569499
+bcy_test_chain_height   = 570618
 
 # Parameter for how long Alice/Bob should have to wait before they can take back their coins
 ## alice_locktime MUST be > bob_locktime
-alice_locktime = 5
-bob_locktime = 3
+alice_locktime = 2
+bob_locktime = 1
 
 tx_fee = 0.0001
-
+tx_fee1 = 0.0001
 broadcast_transactions = True
-alice_redeems = True
+alice_redeems = False
 
 #
 #
@@ -118,12 +118,12 @@ def atomic_swap(broadcast_transactions=False, alice_redeems=True):
     alice_swap_tx, alice_swap_scriptPubKey = alice.alice_swap_tx(
         alice_txid_to_spend,
         alice_utxo_index,
-        alice_amount_to_send - tx_fee,
+        alice_amount_to_send - tx_fee1,
     )
 
     # Alice creates a time-locked transaction to return coins to herself
     alice_return_coins_tx = alice.return_coins_tx(
-        alice_amount_to_send - (2 * tx_fee),
+        alice_amount_to_send - (2 * tx_fee1),
         alice_swap_tx,
         btc_test3_chain_height + alice_locktime,
         alice_swap_scriptPubKey,
@@ -170,7 +170,7 @@ def atomic_swap(broadcast_transactions=False, alice_redeems=True):
 
         # Once x is revealed, Bob may also redeem his coins
         bob_redeem_tx = bob.redeem_swap(
-            alice_amount_to_send - (2 * tx_fee),
+            alice_amount_to_send - (2 * tx_fee1),
             alice_swap_tx,
             alice_swap_scriptPubKey,
             alice_secret_x,

@@ -1,4 +1,4 @@
-from bitcoin.core import Hash160, b2x, CMutableTransaction
+from bitcoin.core import Hash160, b2lx, CMutableTransaction
 from bitcoin.core.script import CScript, SignatureHash, SIGHASH_ALL
 from bitcoin.core.scripteval import VerifyScript, SCRIPT_VERIFY_P2SH
 from utils import create_txin, create_txout, create_OP_CHECKSIG_signature, create_signed_transaction, broadcast_transaction
@@ -27,7 +27,7 @@ def bob_swap_tx(txid_to_spend, utxo_index, amount_to_send, hash_of_secret):
     return tx, txout_script
 
 def return_coins_tx(amount_to_send, last_tx, lock_time):
-    txin = create_txin(b2x(last_tx.GetTxid()), 0)
+    txin = create_txin(b2lx(last_tx.GetTxid()), 0)
     txout = create_txout(amount_to_send, P2PKH_scriptPubKey(bob_address_BCY))
     tx = CMutableTransaction([txin], [txout], nLockTime=lock_time)
     return tx
@@ -46,7 +46,7 @@ def redeem_swap(amount_to_send, alice_swap_tx, txin_scriptPubKey, alice_secret_x
     txout_script = P2PKH_scriptPubKey(bob_address_BTC)
     txout = create_txout(amount_to_send, txout_script)
 
-    txin = create_txin(b2x(alice_swap_tx.GetTxid()), 0)
+    txin = create_txin(b2lx(alice_swap_tx.GetTxid()), 0)
     tx = CMutableTransaction([txin], [txout])
     bob_signature_BTC = sign_BTC(tx, txin_scriptPubKey)
     txin_scriptSig = coinExchangeScriptSig1(bob_signature_BTC, alice_secret_x)
