@@ -1,0 +1,186 @@
+/Users/sokoface/Documents/大三上/区块链/Exercise4/venv/bin/python /Users/sokoface/Documents/大三上/区块链/Exercise4/swap.py 
+Alice swap tx (BTC) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "e7f57d1b502b7ac286f29f846bc5c352f1a997b772074ecb4014d0a6d1e14fcb",
+    "addresses": [
+      "mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa"
+    ],
+    "total": 123963,
+    "fees": 10000,
+    "size": 302,
+    "vsize": 302,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T08:38:38.514208747Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "ca218ade9e70084acce81c92ce9b5a510affc8d38d44ac367fd53624812a581b",
+        "output_index": 5,
+        "script": "483045022100ef335ca911cdb92f948b8d815efe681afb9221f3a6b5d1124a8173331b92a02d022035e54c85fb43245e3c700aefe0d2307acb8020082fc11be12ff12b22b8c22c0a01210308dbfed4c2fea423f82ab8fe4a47778c3cb7a6e242f4f11923152de30361a94c",
+        "output_value": 133963,
+        "sequence": 4294967295,
+        "addresses": [
+          "mteRwEbGprHzEPULW5inDJcxZ4ETBqqnCa"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 2409278
+      }
+    ],
+    "outputs": [
+      {
+        "value": 123963,
+        "script": "74528763a914853b775079232503df966e626618e1d388a957208821034ceae48aa9d4260d9d38b7d9fb7f5d933177322d7efab84ec07712123384bbcaac6752210308dbfed4c2fea423f82ab8fe4a47778c3cb7a6e242f4f11923152de30361a94c21034ceae48aa9d4260d9d38b7d9fb7f5d933177322d7efab84ec07712123384bbca52ae68",
+        "addresses": null,
+        "script_type": "unknown"
+      }
+    ]
+  }
+}
+Bob swap tx (BCY) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "3f5c7b80b00e4770937383f676a3a2702af8a37943f8eb23592e0bfe7d0f628a",
+    "addresses": [
+      "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778"
+    ],
+    "total": 70000,
+    "fees": 10000,
+    "size": 302,
+    "vsize": 302,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T08:38:39.703309528Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "3251adfb09990a1e4194ed14185c8d165d883ea5633904b8b41672d0e53c1d7c",
+        "output_index": 5,
+        "script": "483045022100f32017eed2154b0e1f8451178a3e67bf72123eee66b0a1a124b084efc0f328410220573cd5e4b5e37dc9e69ca47a4a0c4a19ccc27a15017ddaa77c37234c6393fb3b0121035070fc2e3155931cd556e59fab62b2e24193fdc607171c693bb263464d9886b3",
+        "output_value": 80000,
+        "sequence": 4294967295,
+        "addresses": [
+          "Bzjqq55x8sPYxFQk7LaACRhvUjtgYxr778"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 569488
+      }
+    ],
+    "outputs": [
+      {
+        "value": 70000,
+        "script": "74528763a914853b775079232503df966e626618e1d388a9572088210250eefd8c9c6f1efe54aff349a8b15d62d3a4649808ad8b01296bbe24b4f05764ac675221035070fc2e3155931cd556e59fab62b2e24193fdc607171c693bb263464d9886b3210250eefd8c9c6f1efe54aff349a8b15d62d3a4649808ad8b01296bbe24b4f0576452ae68",
+        "addresses": null,
+        "script_type": "unknown"
+      }
+    ]
+  }
+}
+Sleeping for 20 minutes to let transactions confirm...
+Alice redeem from swap tx (BCY) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "c5181b7711b4ee590b5826b80e8c133f00945f5a7cc9713cb24853191b38a092",
+    "addresses": [
+      "CCWJ9XDb1apZrfLVGuQeFceG8ckcJXNkHy"
+    ],
+    "total": 60000,
+    "fees": 10000,
+    "size": 182,
+    "vsize": 182,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T08:58:41.126429009Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "3f5c7b80b00e4770937383f676a3a2702af8a37943f8eb23592e0bfe7d0f628a",
+        "output_index": 0,
+        "script": "473044022007e5720ef11a8480e11810d940b8c557d2449a610196f5e100ceb3366f78dc2502206d982d01a678f1ba1216513088bae8e869d14267ac587fc083c81d6bbfda99ed01187468697349734153656372657450617373776f7264313233",
+        "output_value": 70000,
+        "sequence": 4294967295,
+        "script_type": "unknown",
+        "age": 570584
+      }
+    ],
+    "outputs": [
+      {
+        "value": 60000,
+        "script": "76a914d49402950123d0602b7ab482bc7fbaec883dd50d88ac",
+        "addresses": [
+          "CCWJ9XDb1apZrfLVGuQeFceG8ckcJXNkHy"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  }
+}
+Bob redeem from swap tx (BTC) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "4cc312761ac96ed86d1018d719130587f98f99d224bb5226cb6431ee37d3f676",
+    "addresses": [
+      "mzF2hiV3PJoiokXqgBeanyhLeAFDh1biXH"
+    ],
+    "total": 113963,
+    "fees": 10000,
+    "size": 182,
+    "vsize": 182,
+    "preference": "low",
+    "relayed_by": "156.146.45.184",
+    "received": "2022-12-02T08:58:42.461445573Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "e7f57d1b502b7ac286f29f846bc5c352f1a997b772074ecb4014d0a6d1e14fcb",
+        "output_index": 0,
+        "script": "473044022050069cf846b3821dcbeacc961f56e0ac1da7d4a6b6aa5ab4c00753451814910a02201997d14ae2086b0c22b58c429fd696aaccf65ac007ecc737a7af45c96de3634401187468697349734153656372657450617373776f7264313233",
+        "output_value": 123963,
+        "sequence": 4294967295,
+        "script_type": "unknown",
+        "age": 2409411
+      }
+    ],
+    "outputs": [
+      {
+        "value": 113963,
+        "script": "76a914cd676a01a970acd184f1c32124b777cbc12c4ad388ac",
+        "addresses": [
+          "mzF2hiV3PJoiokXqgBeanyhLeAFDh1biXH"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  }
+}
+
+进程已结束,退出代码0
